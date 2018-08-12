@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const App = () => {
-  return (
-    <div>
-      <p>Am I Your Friend Bro !</p>
-    </div>
-  );
-};
-export default App;
+export default class App extends React.Component {
+  render() {
+    return(
+      <div>Hello worlds!!!</div>
+    )
+  }
+}
 ReactDOM.render(<App />, document.getElementById("app"));
