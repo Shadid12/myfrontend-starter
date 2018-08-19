@@ -1,0 +1,95 @@
+.parent-card
+    color: #0074d9
+    padding: 20px
+    height: 30vh
+.card 
+    border: 1px dotted #000
+    background-color: #eee
+    padding: 20px
+    color: #000
+    position: relative
+    margin-top: 10px
+    width: 30vh
+    height: 45vh
+    display: flex
+    justify-content: center
+    animation: cardSlideUp 0.3s 1 0.6s both
+
+.card-1
+    border: 1px dotted #000
+    background-color: cyan
+    padding: 20px
+    color: #000
+    position: relative
+    margin-top: -275px
+    margin-left: 8px
+    width: 30vh
+    height: 45vh
+    display: flex
+    justify-content: center
+    animation: cardSlideUp 0.3s 1 0.7s both
+
+.side-card
+    border: 1px dotted #9212
+    background-color: #1334
+    padding: 20px
+    color: #009a
+    position: relative
+    margin-top: -300px
+    margin-left: 250px
+    width: 30vh
+    height: 25vh
+    display: flex
+    justify-content: center
+    animation: cardSlideUp 0.3s 1 1s both
+
+.side-card-1
+    border: 1px dotted #9212
+    background-color: #aa3322
+    padding: 20px
+    color: #009a
+    position: relative
+    margin-top: 20px
+    margin-left: 250px
+    width: 30vh
+    height: 35vh
+    display: flex
+    justify-content: center
+    animation: cardSlideUp 0.3s 1 1.2s both
+
+.mid-card
+    border-radius: 27px 27px 27px 27px
+    background-color: #b5bce8
+    padding: 20px
+    color: #009a
+    position: relative
+    width: 20vw
+    height: 20vh
+    margin-left: 40vw
+    margin-top: -350px
+    display: flex
+    justify-content: center
+    animation: cardSlideUp 0.3s 1 1.4s both
+
+.mid-card-2
+    border-radius: 27px 27px 27px 27px
+    background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%)
+    padding: 20px
+    color: #009a
+    position: relative
+    width: 20vw
+    height: 20vh
+    margin-left: 45vw
+    margin-top: -20vh
+    display: flex
+    justify-content: center
+    animation: cardSlideUp 0.3s 1 1.6s both
+
+@keyframes cardSlideUp
+    0%
+        transform: translateY(800px)
+        opacity: 0
+        filter: blur(50px)
+    100%
+        transform: translateY(0)
+        opacity: 1
