@@ -21,10 +21,6 @@ module.exports = {
             }
           ]
         },
-        // {
-        //   test: /\.css$/,
-        //   use: [MiniCssExtractPlugin.loader, "css-loader"]
-        // },
         {
           test: /\.(css|scss|sass)$/,
           use: [
@@ -37,7 +33,7 @@ module.exports = {
     },
     plugins: [
       new HtmlWebPackPlugin({
-        template: "./src/index.html",
+        template: "./src/card-nav.html",
         filename: "./index.html"
       }),
       new MiniCssExtractPlugin({
