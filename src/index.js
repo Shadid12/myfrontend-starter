@@ -6,12 +6,18 @@ import './js/nav';
 
 const nav = document.querySelector('.y-card');
 const ref = document.querySelector('.main-reference');
+const aboutMe = document.querySelector('.about-me');
 
-let userHasScrolled = false;
+
+window.toggleCard = function() {
+    console.log('toggleCard');
+    nav.classList.add('y-card-tall');
+}
 
 window.onscroll = (e) =>
 {
     console.log(window.scrollY)
+    behavior: 'smooth';
     if(window.scrollY > 200) {
         nav.classList.add('y-card-tall');
     }
